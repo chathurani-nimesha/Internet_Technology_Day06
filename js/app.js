@@ -72,7 +72,7 @@ console.log(customer2.father.address);
 //      Document Object Model (DOM) Manipulation
 //----------------------------------------------------------
 
-document.write("<h2>Hello world! by js<h2>");
+//document.write("<h2>Hello world! by js<h2>");
 
 console.log(document.title);
 
@@ -83,4 +83,24 @@ console.log(heading);
 
 //inner text change
 
-heading.innerText="Chathu";
+//heading.innerText="Chathu";
+
+//-------------------------------------------------
+//using a method change text ===onclick
+
+function changeHeading(){
+    heading.innerText="Chathu";
+    console.log("Clicked");
+}
+
+//===============Exercise
+
+let number=0;
+function incrementName(){
+    heading1.innerText="Chathu"+number++;
+    console.log("clicked");
+}
+function decrementName(){
+    heading1.innerText="Chathu"+number--;
+    console.log("Clicked");
+}
