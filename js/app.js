@@ -1,1 +1,47 @@
-console.log("Hi..");
+console.log("Hi... Day 06 of Java Script");
+
+//no-Args constructor ===default constructor
+
+//-----------------------------------------------
+// object -01 method ==using a class
+class Customer{
+    name;
+    age;
+    address;
+
+    constructor(name,age,address){
+        this.name=name;
+        this.age=age;
+        this.address=address;
+    }
+}
+let customer1=new Customer("Chathu",20,"Anuradhapura");
+console.log(customer1);
+console.log(customer1.name);
+
+//object -02 method
+
+let customer2={
+    name: "John",
+    age:30,                //seperate lines using comma(,)
+    address:"New York" ,
+    items: ["item1","item2"],   //in js, object is initialized using : (colon).
+    father:{    //another object inside the cusotmer ojbect
+        name: "Deo",
+        age: 10,
+        address: "Kandy"
+    }
+};
+
+console.log(customer2);
+
+// access to the elements
+console.log(customer2.name);
+console.log(customer2.age);
+console.log(customer2.address);
+
+console.log(customer2.father.name);
+console.log(customer2.father.address);
+
+//------------------------------------------------
+
