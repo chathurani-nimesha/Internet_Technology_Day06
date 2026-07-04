@@ -111,3 +111,29 @@ function changeHeading1(){
    let newName=inputText.value;
    heading2.innerText=newName;
 }
+
+//===========Calculator==============================
+
+function addition(){
+    let input1=number1.value;
+    console.log(input1);
+    
+    let input2=number2.value;
+    console.log(input2);
+
+   let add=Number(input1)+Number(input2);
+   answer.innerText=add; 
+}
+
+function substraction(){
+    let input1=number1.value;
+    console.log(input1);
+    
+    let input2=number2.value;
+    console.log(input2);
+
+   let sub=Number(input1) - Number(input2);
+   answer.innerText=sub; 
+}
+
+//==============================================================
