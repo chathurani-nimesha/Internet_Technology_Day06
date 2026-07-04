@@ -93,7 +93,7 @@ function changeHeading(){
     console.log("Clicked");
 }
 
-//===============Exercise
+//===============Exercise========================================
 
 let number=0;
 function incrementName(){
@@ -103,4 +103,11 @@ function incrementName(){
 function decrementName(){
     heading1.innerText="Chathu"+number--;
     console.log("Clicked");
+}
+
+//===============================================================
+function changeHeading1(){
+   console.log(inputText.value);
+   let newName=inputText.value;
+   heading2.innerText=newName;
 }
