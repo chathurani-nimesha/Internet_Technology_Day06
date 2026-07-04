@@ -72,3 +72,15 @@ console.log(customer2.father.address);
 //      Document Object Model (DOM) Manipulation
 //----------------------------------------------------------
 
+document.write("<h2>Hello world! by js<h2>");
+
+console.log(document.title);
+
+let heading=document.getElementById("heading");
+console.log(heading);
+
+//------------------------------------------------
+
+//inner text change
+
+heading.innerText="Chathu";
