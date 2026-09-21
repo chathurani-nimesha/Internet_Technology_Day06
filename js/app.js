@@ -1,5 +1,7 @@
 console.log("Hi... Day 06 of Java Script");
 
+//constructor==created when object initialization.
+
 //no-Args constructor ===default constructor
 
 //-----------------------------------------------
@@ -32,16 +34,16 @@ let customer2 = {
       name: "Book1",
       variants: [
         {
-            id:1,
-            name:"variant1",
-            price:10
+          id: 1,
+          name: "variant1",
+          price: 10,
         },
         {
-            id:2,
-            name:"variants2",
-            price:20
-        }
-      ]
+          id: 2,
+          name: "variants2",
+          price: 20,
+        },
+      ],
     },
     {
       id: 1002,
@@ -76,7 +78,7 @@ console.log(customer2.father.address);
 
 console.log(document.title);
 
-let heading=document.getElementById("heading");
+let heading = document.getElementById("heading");
 console.log(heading);
 
 //------------------------------------------------
@@ -88,52 +90,52 @@ console.log(heading);
 //-------------------------------------------------
 //using a method change text ===onclick
 
-function changeHeading(){
-    heading.innerText="Chathu";
-    console.log("Clicked");
+function changeHeading() {
+  heading.innerText = "Chathu";
+  console.log("Clicked");
 }
 
 //===============Exercise========================================
 
-let number=0;
-function incrementName(){
-    heading1.innerText="Chathu"+number++;
-    console.log("clicked");
+let number = 0;
+function incrementName() {
+  heading1.innerText = "Chathu" + number++;
+  console.log("clicked");
 }
-function decrementName(){
-    heading1.innerText="Chathu"+number--;
-    console.log("Clicked");
+function decrementName() {
+  heading1.innerText = "Chathu" + number--;
+  console.log("Clicked");
 }
 
 //===============================================================
-function changeHeading1(){
-   console.log(inputText.value);
-   let newName=inputText.value;
-   heading2.innerText=newName;
+function changeHeading1() {
+  console.log(inputText.value);
+  let newName = inputText.value;
+  heading2.innerText = newName;
 }
 
 //===========Calculator==============================
 
-function addition(){
-    let input1=number1.value;
-    console.log(input1);
-    
-    let input2=number2.value;
-    console.log(input2);
+function addition() {
+  let input1 = number1.value;
+  console.log(input1);
 
-   let add=Number(input1)+Number(input2);
-   answer.innerText=add; 
+  let input2 = number2.value;
+  console.log(input2);
+
+  let add = Number(input1) + Number(input2);
+  answer.innerText = add;
 }
 
-function substraction(){
-    let input1=number1.value;
-    console.log(input1);
-    
-    let input2=number2.value;
-    console.log(input2);
+function substraction() {
+  let input1 = number1.value;
+  console.log(input1);
 
-   let sub=Number(input1) - Number(input2);
-   answer.innerText=sub; 
+  let input2 = number2.value;
+  console.log(input2);
+
+  let sub = Number(input1) - Number(input2);
+  answer.innerText = sub;
 }
 
 //==============================================================
