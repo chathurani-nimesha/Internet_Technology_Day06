@@ -165,3 +165,19 @@ function btnAddCustomerOnAction(){
   console.log(customerList);
 
 }
+
+//table
+function loadTable(){
+  let tblCustomers=document.getElementById("tblCustomers");
+
+  tblCustomers.innerHTML +=`<tr>
+      <td>Saman</td>
+      <td>Walana</td>
+      <td>15</td>
+      <td>Saman@gmail.com</td>
+      <td>75000</td>
+    </tr>
+  `
+
+  console.log(tblCustomers);
+}
