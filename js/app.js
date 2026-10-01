@@ -1,141 +1,167 @@
-console.log("Hi... Day 06 of Java Script");
+// console.log("Hi... Day 06 of Java Script");
 
-//constructor==created when object initialization.
+// //constructor==created when object initialization.
 
-//no-Args constructor ===default constructor
+// //no-Args constructor ===default constructor
 
-//-----------------------------------------------
-// object -01 method ==using a class
-class Customer {
-  name;
-  age;
-  address;
+// //-----------------------------------------------
+// // object -01 method ==using a class
+// class Customer {
+//   name;
+//   age;
+//   address;
 
-  constructor(name, age, address) {
-    this.name = name;
-    this.age = age;
-    this.address = address;
-  }
-}
-let customer1 = new Customer("Chathu", 20, "Anuradhapura");
-console.log(customer1);
-console.log(customer1.name);
+//   constructor(name, age, address) {
+//     this.name = name;
+//     this.age = age;
+//     this.address = address;
+//   }
+// }
+// let customer1 = new Customer("Chathu", 20, "Anuradhapura");
+// console.log(customer1);
+// console.log(customer1.name);
 
-//object -02 method
+// //object -02 method
 
-let customer2 = {
-  name: "John",
-  age: 30, //seperate lines using comma(,)
-  address: "New York",
-  items: ["item1", "item2"], //in js, object is initialized using : (colon).
-  books: [
-    {
-      id: 1001,
-      name: "Book1",
-      variants: [
-        {
-          id: 1,
-          name: "variant1",
-          price: 10,
-        },
-        {
-          id: 2,
-          name: "variants2",
-          price: 20,
-        },
-      ],
-    },
-    {
-      id: 1002,
-      name: "Book2",
-    },
-  ],
-  father: {
-    //another object inside the cusotmer ojbect
-    name: "Deo",
-    age: 10,
-    address: "Kandy",
-  },
-};
+// let customer2 = {
+//   name: "John",
+//   age: 30, //seperate lines using comma(,)
+//   address: "New York",
+//   items: ["item1", "item2"], //in js, object is initialized using : (colon).
+//   books: [
+//     {
+//       id: 1001,
+//       name: "Book1",
+//       variants: [
+//         {
+//           id: 1,
+//           name: "variant1",
+//           price: 10,
+//         },
+//         {
+//           id: 2,
+//           name: "variants2",
+//           price: 20,
+//         },
+//       ],
+//     },
+//     {
+//       id: 1002,
+//       name: "Book2",
+//     },
+//   ],
+//   father: {
+//     //another object inside the cusotmer ojbect
+//     name: "Deo",
+//     age: 10,
+//     address: "Kandy",
+//   },
+// };
 
-console.log(customer2);
+// console.log(customer2);
 
-// access to the elements
-console.log(customer2.name);
-console.log(customer2.age);
-console.log(customer2.address);
+// // access to the elements
+// console.log(customer2.name);
+// console.log(customer2.age);
+// console.log(customer2.address);
 
-console.log(customer2.father.name);
-console.log(customer2.father.address);
+// console.log(customer2.father.name);
+// console.log(customer2.father.address);
 
-//console.log(customer2.books.variants.id);
+// //console.log(customer2.books.variants.id);
 
-//----------------------------------------------------------
-//      Document Object Model (DOM) Manipulation
-//----------------------------------------------------------
+// //----------------------------------------------------------
+// //      Document Object Model (DOM) Manipulation
+// //----------------------------------------------------------
 
-//document.write("<h2>Hello world! by js<h2>");
+// //document.write("<h2>Hello world! by js<h2>");
 
-console.log(document.title);
+// console.log(document.title);
 
-let heading = document.getElementById("heading");
-console.log(heading);
+// let heading = document.getElementById("heading");
+// console.log(heading);
 
-//------------------------------------------------
+// //------------------------------------------------
 
-//inner text change
+// //inner text change
 
-//heading.innerText="Chathu";
+// //heading.innerText="Chathu";
 
-//-------------------------------------------------
-//using a method change text ===onclick
+// //-------------------------------------------------
+// //using a method change text ===onclick
 
-function changeHeading() {
-  heading.innerText = "Chathu";
-  console.log("Clicked");
-}
+// function changeHeading() {
+//   heading.innerText = "Chathu";
+//   console.log("Clicked");
+// }
 
 //===============Exercise========================================
 
-let number = 0;
-function incrementName() {
-  heading1.innerText = "Chathu" + number++;
-  console.log("clicked");
-}
-function decrementName() {
-  heading1.innerText = "Chathu" + number--;
-  console.log("Clicked");
-}
+// let number = 0;
+// function incrementName() {
+//   heading1.innerText = "Chathu" + number++;
+//   console.log("clicked");
+// }
+// function decrementName() {
+//   heading1.innerText = "Chathu" + number--;
+//   console.log("Clicked");
+// }
 
-//===============================================================
-function changeHeading1() {
-  console.log(inputText.value);
-  let newName = inputText.value;
-  heading2.innerText = newName;
-}
+// //===============================================================
+// function changeHeading1() {
+//   console.log(inputText.value);
+//   let newName = inputText.value;
+//   heading2.innerText = newName;
+// }
 
 //===========Calculator==============================
 
-function addition() {
-  let input1 = number1.value;
-  console.log(input1);
+// function addition() {
+//   let input1 = number1.value;
+//   console.log(input1);
 
-  let input2 = number2.value;
-  console.log(input2);
+//   let input2 = number2.value;
+//   console.log(input2);
 
-  let add = Number(input1) + Number(input2);
-  answer.innerText = add;
-}
+//   let add = Number(input1) + Number(input2);
+//   answer.innerText = add;
+// }
 
-function substraction() {
-  let input1 = number1.value;
-  console.log(input1);
+// function substraction() {
+//   let input1 = number1.value;
+//   console.log(input1);
 
-  let input2 = number2.value;
-  console.log(input2);
+//   let input2 = number2.value;
+//   console.log(input2);
 
-  let sub = Number(input1) - Number(input2);
-  answer.innerText = sub;
-}
+//   let sub = Number(input1) - Number(input2);
+//   answer.innerText = sub;
+// }
 
 //==============================================================
+//Customer Manager
+
+let customerList=[];
+
+function btnAddCustomerOnAction(){
+  let txtName=document.getElementById("txtName").value;
+  let txtAddress=document.getElementById("txtAddress").value;
+  let txtAge=document.getElementById("txtAge").value;
+  let txtEmail=document.getElementById("txtEmail").value;
+  let txtSalary=document.getElementById("txtSalary").value;
+
+  //console.log(txtName);
+
+  let customer={
+    name:txtName,
+    address:txtAddress,
+    age:txtAge,
+    email:txtEmail,
+    salary:txtSalary
+  }
+
+  customerList.push(customer);
+
+  console.log(customerList);
+
+}
